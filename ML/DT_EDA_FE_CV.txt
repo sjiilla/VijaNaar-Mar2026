@@ -1,0 +1,29 @@
+Some EDA and FE on TrainData
+
+
+Same EDA and FE on TestData
+
+TitanicFull = Train(Exclude Survived)+Test
+Do all EDA and FE on TitanicFull data
+Before Fit, let's TatianicFull data into Train and Test
+
+
+Decission Tree
+Parameters: Criterion, Max_Deapth, Min_Sample_Split
+
+Cross validation(K- Fold Mechanism), Ex: CV = 10
+Create validation data from train Data and with CV, every record will be part Validation data in one or the other iteration. 
+
+Lighter note: Over fitting, Controlling the over fitting
+
+1-Hot Encoding (Get_Dummies)
+
+EDA(Exploratory Data Analysis)- On the Rows: Filling Missig data(Imputation),
+Converted 
+ 
+
+FE(Feature Engineering) - On columns: Add 2 columns, Extract a new column from original column, Transform Categorical column to Number column and viceversa
+FamilySize = Sib+ParCh 
+Transformed FamilySize into Categorical columns
+Extraction of a new column, Ex; Extract Title from Name column
+
