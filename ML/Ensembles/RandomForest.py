@@ -40,8 +40,11 @@ rf_grid_estimator.fit(X_train, y_train)
 #rf_grid_estimator.grid_scores_
 rf_grid_estimator.best_estimator_
 rf_grid_estimator.best_score_
-#rf_grid_estimator.best_estimator_.feature_importances_
 rf_grid_estimator.score(X_train, y_train)
+
+#Feature Importance
+fi_df = pd.DataFrame({'feature':X_train.columns, 'importance':  rf_grid_estimator.best_estimator_.feature_importances_}) #You may notice that feature	importance "Title_Mr" has more importance
+print(fi_df)
 
 titanic_test = pd.read_csv("test.csv")
 titanic_test.shape
