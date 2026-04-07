@@ -58,3 +58,15 @@ X_test = titanic_test1.drop(['PassengerId','Age','Cabin','Ticket', 'Name'], 1)
 titanic_test['Survived'] = rf_grid_estimator.predict(X_test)
 titanic_test.to_csv("submission_rf.csv", columns=['PassengerId','Survived'], index=False)
 os.getcwd()
+
+#Print #extracting all the trees build by random forest algorithm
+n_tree = 0
+#for est in bag_tree_estimator1.estimator_: 
+for est in rf_grid_estimator.best_estimator_:
+    dot_data = io.StringIO()
+    #tmp = est.tree_
+    tree.export_graphviz(est, out_file = dot_data, feature_names = X_train.columns)
+    graph = pydotplus.graph_from_dot_data(dot_data.getvalue())#[0] 
+    graph.write_pdf("RFTree" + str(n_tree) + ".pdf")
+    n_tree = n_tree + 1
+
