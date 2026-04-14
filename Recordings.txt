@@ -46,3 +46,7 @@ Passcode: k8U@C+U.
 10th April: Variance(Bagging) Vs Bias(Boosting) discussion
 https://us06web.zoom.us/rec/share/XAim0Q4yEXiYw1Ur9lJjnvB0K6Xe73hoAAfDbobHyZcVqz06Psc4T2ryaB4YLxj1.QtqnGOPSWPNwLm55
 Passcode: 5?f5eJ4.
+
+13th April: Stacking Calssifier
+https://us06web.zoom.us/rec/share/Yt2EhpPEB3ugc1ZYM0vQToyBJ5LS0HRx51puVZe11uFaby0ga7YRDAP4fWI_VQ25.x09WFWFaFsF4ZJ4c
+Passcode: i#5$1ufG
