@@ -24,13 +24,13 @@ pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Sex'], margi
 pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Pclass'], margins=True)
 
 #hue is for further classification plotting, In this case Plot survivied for each sex.
-sns.factorplot(x="Sex", hue="Survived", data=titanic_train, kind="count", size=6) 
-sns.factorplot(x="Pclass", hue="Survived", data=titanic_train, kind="count", size=6)
-sns.factorplot(x="Embarked", hue="Survived", data=titanic_train, kind="count", size=6)
+sns.catplot(x="Sex", hue="Survived", data=titanic_train, kind="count") 
+sns.catplot(x="Pclass", hue="Survived", data=titanic_train, kind="count")
+sns.catplot(x="Embarked", hue="Survived", data=titanic_train, kind="count")
 
 #explore bivariate relationships: categorical vs continuous 
 #kind="box", 
-sns.factorplot(x="Fare", hue="Survived", data=titanic_train, kind="count", size=6)
+sns.catplot(x="Fare", hue="Survived", data=titanic_train, kind="box")
 
 #.map is a inline function like a for loop
 #Survived Vs Fare
