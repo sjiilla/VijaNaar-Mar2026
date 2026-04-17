@@ -1,34 +1,45 @@
-#Multi Variate
-
 import os
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 #returns current working directory
 os.getcwd()
 #changes working directory
 os.chdir("C:/Data Science/Data")
+
 titanic_train = pd.read_csv("train.csv")
 
 #EDA
 titanic_train.shape
 titanic_train.info()
 
-#Use FacetGrid countplot for Categoric categoric
-sns.FacetGrid(titanic_train, row="Survived", col="Sex").map(sns.countplot, "Pclass")
-#Use FacetGrid KDEPlot for Categoric continuous
-#kde plot gives smooth graph and you may see some -ve values feel, but there are no -ve values. 
-sns.FacetGrid(titanic_train, row="Survived", col="Sex").map(sns.kdeplot, "Fare")
-#Let's look at the same with distplot and you don't see any -ve values.
-sns.FacetGrid(titanic_train, row="Survived", col="Sex").map(sns.distplot, "Fare")
-sns.FacetGrid(titanic_train, row="Survived", col="Sex").map(sns.kdeplot, "Age")
-sns.FacetGrid(titanic_train, row="Pclass", col="Sex").map(sns.kdeplot, "Age").add_legend()
+#explore bivariate relationships: categorical vs categorical 
+pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Sex'])
+#Crosstab cab be extended to multiple columns as well
+pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Pclass'])
+pd.crosstab(index=titanic_train['Survived'], columns=[titanic_train['Pclass'], titanic_train['Embarked'], titanic_train['Sex']])
 
-sns.FacetGrid(titanic_train, row="Pclass", col="Sex", hue="Survived").map(sns.kdeplot, "Age").add_legend()
-sns.FacetGrid(titanic_train, row="Pclass", col="Sex", hue="Embarked").map(sns.kdeplot, "Age").add_legend()
+#margins=True gives sub total and total across cross-tab
+pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Sex'], margins=True)
+pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Pclass'], margins=True)
 
-sns.FacetGrid(titanic_train, row="Pclass", col="Sex", hue="Survived").map(plt.scatter, "Parch", "SibSp").add_legend()
+sns.catplot(x="Sex", data=titanic_train, kind="count") 
+sns.catplot(x="Pclass", data=titanic_train, kind="count")
+sns.catplot(x="Embarked", data=titanic_train, kind="count")
 
-sns.FacetGrid(titanic_train, row="Survived", col="Sex").map(plt.scatter, "Pclass", "SibSp", "Parch")
+#With hue is for further classification plotting, In this case Plot survivied for each sex.
+sns.catplot(x="Sex", hue="Survived", data=titanic_train, kind="count") 
+sns.catplot(x="Pclass", hue="Survived", data=titanic_train, kind="count")
+sns.catplot(x="Embarked", hue="Survived", data=titanic_train, kind="count")
 
+#explore bivariate relationships: categorical vs continuous 
+#kind="box", 
+sns.catplot(x="Fare", hue="Survived", data=titanic_train, kind="box")
+
+#.map is a inline function like a for loop
+#Survived Vs Fare
+sns.FacetGrid(titanic_train, row="Survived").map(sns.kdeplot, "Fare").add_legend()
+sns.FacetGrid(titanic_train, row="Survived").map(sns.kdeplot, "Age").add_legend()
+
+#explore bivariate relationships: continuous vs continuous 
+sns.jointplot(x="SibSp", y="Parch", data=titanic_train)
