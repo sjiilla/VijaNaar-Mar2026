@@ -23,7 +23,11 @@ pd.crosstab(index=titanic_train['Survived'], columns=[titanic_train['Pclass'], t
 pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Sex'], margins=True)
 pd.crosstab(index=titanic_train['Survived'], columns=titanic_train['Pclass'], margins=True)
 
-#hue is for further classification plotting, In this case Plot survivied for each sex.
+sns.catplot(x="Sex", data=titanic_train, kind="count") 
+sns.catplot(x="Pclass", data=titanic_train, kind="count")
+sns.catplot(x="Embarked", data=titanic_train, kind="count")
+
+#With hue is for further classification plotting, In this case Plot survivied for each sex.
 sns.catplot(x="Sex", hue="Survived", data=titanic_train, kind="count") 
 sns.catplot(x="Pclass", hue="Survived", data=titanic_train, kind="count")
 sns.catplot(x="Embarked", hue="Survived", data=titanic_train, kind="count")
