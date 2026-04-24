@@ -1,0 +1,43 @@
+Pseudo Code:
+Read Train Data
+Read Test Data
+Test.Sruvived = None
+FullData = pd.concat(Train and Test Data)
+
+EDA & FE:
+1. Remove the columns where the data has null values
+[NullableColumns] = FullData.hasnulls
+If NullableColumns > 0 
+	FullData.drop(NullableColumns)
+
+2. Get all categorical sequential style of data and see of you 
+can convert to number column (Ex: Qualities and conditions columns)
+Try to add all such columns at one shot
+
+3. Do one hot encoding
+	pd.getDummies(c1, c2, c3, c4.........)
+	[CategoryColumnsList] = Data.columns.type(DType=Object)
+	[NumberColumnsList] = Data.columns.type(Type=Number)
+
+	pd.getdummies[CategoryColumnsList]
+
+--------
+Now we have the ready for fitment
+Split Train and Test data
+
+Plot my SalePrice and see how the Bell Curve / Box Plot whiskers look like?
+Option1: Either you can drop data
+Option2: Transform SalePrice to Log2(SalePrice_
+Plot Log2(SalePrice) and look whether Bell Curve is smooth Or not?
+
+dt = DT.DecissionTreeRegressor(FineTunedTrainData)
+dt.fit()
+If smooth Bell curve, then use Log_SalePrice instead of SalePrice
+--------------
+
+Metrics to valuate your precited loss/Error
+
+		
+
+
+
