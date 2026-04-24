@@ -1,13 +1,15 @@
-Recordings:
-Intro1:
+VijaNaar AI Research Labs-Recordings:
+
+Introduction to Data Science:
 https://us06web.zoom.us/rec/share/99CXy1BBx8dZl9k552FX0Bp4VWOK5eWsWO8wXzu20kjzpc9o9QdVFTI9WTBrJLs-.Jgapp-uky0LDrQnu?from=hub
 Passcode: pqE8d*%d
 
-Intro2:
+Introduction to AI-ML:
 https://us06web.zoom.us/rec/share/Y37sbuWP52sHdVIsNX_z8_Wng_ZZBjg4jCHzervbIQNxSY0_Yvvrjh53bJHOtN5F.bOazYkvtvyQl4RBM?from=hub
 Passcode: k1D&?+6r
 
-ML1:
+-------Machine Learning: Classification Project------------
+Machine Learning - Begining:
 https://us06web.zoom.us/rec/share/tAuyo9TVIT9gnUwB2kyixrZ_t5sEwgGx1xYYNI3Ni3RPMzc5Nc24BwzY-6yERQNs.hKhfhMB3IxnJUhaU?from=hub
 Passcode: ^J5zt?Du
 
@@ -31,6 +33,7 @@ DT with EDA+FE+CV and more:
 https://us06web.zoom.us/rec/share/Ka471BqBK-pbyTxoMj3nEzl0FQtU41jdpruFPj_R9rlL_aTXDNnZJhLSwVoXpuJl.g3X3FpSS7d52pj65?from=hub
 Passcode: #E%A#713
 
+-------Ensembles-------------
 Date: 3rd APril: Ensembles-RandomForest Theory
 https://us06web.zoom.us/rec/share/9_tI6Mfeq50ilJU7jEgdRBeFM4Ps2yNOAI5TOnPNooSe_KU0ss82WkOtiHECGeLW.4unl7ivvY9xdzhgs
 Passcode: f.@2ehxM
@@ -51,6 +54,7 @@ Passcode: 5?f5eJ4.
 https://us06web.zoom.us/rec/share/Yt2EhpPEB3ugc1ZYM0vQToyBJ5LS0HRx51puVZe11uFaby0ga7YRDAP4fWI_VQ25.x09WFWFaFsF4ZJ4c
 Passcode: i#5$1ufG
 
+-------EDA Plots---------------
 16th April: EDA (UniVariate, BiVariate)
 https://us06web.zoom.us/rec/share/d6k5tTi5IFiq8smVq_X2pIPIU5ymWDh0Qi7ELO-1o1x-SRdI9kTGZvISHa3bCVbK.WErsPt3kr4Qsvvr2
 Passcode: HM=!6c3D
@@ -59,6 +63,7 @@ Passcode: HM=!6c3D
 https://us06web.zoom.us/rec/share/D27qnSdkAHwcB4nRHyUhLXlou5AkaPrXHfNievBQhs--oNTgP2PWR9gjS_yfk-c3.39riux0rKqGI5wwh
 Passcode: QG67%?Q!
 
+------------PCA--------------------------------------
 20th April: (PCA)
 https://us06web.zoom.us/rec/share/LkPmLNbstNxNb-DPAUQzCpBE9BE4YSaRlBMA_xyai7P2N6aUqnUG4gLC0Xi37bRB.8MO2nkqMm_Fff0Kd
 Passcode: f.vz2y7J
@@ -66,3 +71,17 @@ Passcode: f.vz2y7J
 21st April: (PCA cont.... + PCA coding)
 https://us06web.zoom.us/rec/share/hE0hSzKwJfUv3BlcfeyDhk5rwypG6AdioGRGELvKxVE0QkmOfylNtAxmi4Tf7031.iYDeQJD4k-RVIW4Q
 Passcode: $kSUi9Se
+
+23rd April: PCA code on Project
+https://us06web.zoom.us/rec/share/N96ZZI6yOvAefxk_89zgwF9sTgUFLJKDZLhIbg-j0gVgoHSfB3L5cq-GN8AYOm0A.2cpBxRuWt54Bmg9K
+Passcode: &6Q5Csrv
+
+-----Advanced Regression - House Price Predictions---------------------
+24th April: Advnaced Regression House Price Project introduction
+https://us06web.zoom.us/rec/share/QPk2U_DJFQjEMOpllPRULDPXxAqpelKPm1FYrA07_v7F_OBHiqwwNAte0BH-KVVo.vJCYYN6b1N5jW2F9
+Passcode: ukN%h6#h
+
+25th April: House Price Prediction Pesudo code:
+https://us06web.zoom.us/rec/share/_tc3Tee8u32sQT0-l3kUU5PzHwsl-2wanUbNaoC4b8O23OYExEJSx77ClSvccLnt.5hEbTrtterlBJx6B
+Passcode: 73Lmg@AS
+
