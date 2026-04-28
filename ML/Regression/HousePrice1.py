@@ -129,8 +129,6 @@ dt_estimator.fit(X_train, y_train)
 X_test = house_test1
 log_sales_price = dt_estimator.predict(X_test)
 #convert log values back to orignal values by using exponential loss
-#house_test['SalePrice'] = np.exp(log_sales_price)
-house_test['SalePrice'] = log_sales_price
+house_test['SalePrice'] = np.exp(log_sales_price)
+#house_test['SalePrice'] = log_sales_price
 house_test.to_csv("submission_House.csv", columns=['Id','SalePrice'], index=False)
-
-os.getcwd()
