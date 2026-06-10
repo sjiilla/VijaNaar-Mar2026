@@ -164,6 +164,10 @@ Wed 3rd June: Image Analytics coding
 https://us06web.zoom.us/rec/share/dN6BSG-vGro5PODqlq54AvMiPi-Upf1nHt5eshmH1cvfZb_kSfdh_iSYH2EZvqC5.hCMOgF4thaLu5qIa
 Passcode: 9&Qw^t%A
 
+State of the Art CNNs(Convolution Neural Nets)
+https://us06web.zoom.us/rec/share/m0eDhOcjSiu6jjhqDuIhhrTQE9CF4nsV7ICqeWyethypgttghAEc2RBsyIwj_7mH.S5EBPg2mjTZ5Nrab 
+Passcode: =ynL9k.#
+
 PreTrained Nets
 https://us06web.zoom.us/rec/share/ykYEtrERcp9z4loymLf5K03EIu2e4Gejzr5X00zY8_P9KR5rgj3cYvEcJdpJwD_m.P0Y3psMUUPr1pYJ4 
 Passcode: NYJ64OQ?
